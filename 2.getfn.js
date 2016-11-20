@@ -1,6 +1,6 @@
 'use strict'
 var http = require("http");
-var fn=require('./1.fn.js');//引入外部函数
+var fn=require('./fn_1');//引入外部函数
 http.createServer((req,res)=>{
 	res.writeHead(200,{"Content-Type":"text/html; charset=utf-8"});
 	fn0(res);
@@ -11,7 +11,7 @@ http.createServer((req,res)=>{
 
 //本地函数可直接调用
 function fn0(res){
-	res.write("</br> holl my fn0 ")
+	res.write("</br> Hello my fn0 ")
 };
 
 /*

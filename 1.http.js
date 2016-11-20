@@ -3,7 +3,7 @@ var http = require("http");
 http.createServer((request,response)=>{
     response.writeHead(200,{"Content-Type":"text/html; charset=utf-8"});
     console.log('http://localhost:8080/')
-    response.end('hello world')
+    response.end('Hello world')
 }).listen(8080,'127.0.0.1')
 
 //server.listen(8080,'127.0.0.1')    //端口
